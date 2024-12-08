@@ -2,9 +2,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35514.174 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApartmentBooking.AppHost", "ApartmentBooking.AppHost\ApartmentBooking.AppHost.csproj", "{75495263-A162-4948-A0A7-8C56325AF253}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{79B8A403-17E0-4CCA-9C9F-8B6EE636F9A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApartmentBooking.ServiceDefaults", "ApartmentBooking.ServiceDefaults\ApartmentBooking.ServiceDefaults.csproj", "{5BBC71C4-1F15-44AC-B2D5-7949C7001FE4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{784EA55D-095C-4A84-9821-57852A26B24F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApartmentBooking.Domain", "ApartmentBooking.Domain\ApartmentBooking.Domain.csproj", "{F494920D-2787-44FB-B146-D193BC656CC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,16 +14,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{75495263-A162-4948-A0A7-8C56325AF253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75495263-A162-4948-A0A7-8C56325AF253}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75495263-A162-4948-A0A7-8C56325AF253}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75495263-A162-4948-A0A7-8C56325AF253}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5BBC71C4-1F15-44AC-B2D5-7949C7001FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5BBC71C4-1F15-44AC-B2D5-7949C7001FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5BBC71C4-1F15-44AC-B2D5-7949C7001FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5BBC71C4-1F15-44AC-B2D5-7949C7001FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F494920D-2787-44FB-B146-D193BC656CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F494920D-2787-44FB-B146-D193BC656CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F494920D-2787-44FB-B146-D193BC656CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F494920D-2787-44FB-B146-D193BC656CC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F494920D-2787-44FB-B146-D193BC656CC0} = {79B8A403-17E0-4CCA-9C9F-8B6EE636F9A6}
 	EndGlobalSection
 EndGlobal
