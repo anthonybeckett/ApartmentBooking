@@ -1,12 +1,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{79B8A403-17E0-4CCA-9C9F-8B6EE636F9A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{784EA55D-095C-4A84-9821-57852A26B24F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApartmentBooking.Domain", "ApartmentBooking.Domain\ApartmentBooking.Domain.csproj", "{F494920D-2787-44FB-B146-D193BC656CC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApartmentBooking.Application", "ApartmentBooking.Application\ApartmentBooking.Application.csproj", "{7483529A-8A2E-4A37-8536-3830543F976C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,11 +20,16 @@ Global
 		{F494920D-2787-44FB-B146-D193BC656CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F494920D-2787-44FB-B146-D193BC656CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F494920D-2787-44FB-B146-D193BC656CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7483529A-8A2E-4A37-8536-3830543F976C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7483529A-8A2E-4A37-8536-3830543F976C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7483529A-8A2E-4A37-8536-3830543F976C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7483529A-8A2E-4A37-8536-3830543F976C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F494920D-2787-44FB-B146-D193BC656CC0} = {79B8A403-17E0-4CCA-9C9F-8B6EE636F9A6}
+		{7483529A-8A2E-4A37-8536-3830543F976C} = {79B8A403-17E0-4CCA-9C9F-8B6EE636F9A6}
 	EndGlobalSection
 EndGlobal
