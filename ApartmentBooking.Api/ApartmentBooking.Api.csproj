@@ -14,7 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\ApartmentBooking.Application\ApartmentBooking.Application.csproj" />
+    <ProjectReference Include="..\ApartmentBooking.Infrastructure\ApartmentBooking.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
