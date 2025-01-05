@@ -1,0 +1,21 @@
+services:
+  apartmentbooking.api:
+    image: ${DOCKER_REGISTRY-}apartmentbookingapi
+    container_name: ApartmentBooking.Api
+    build:
+      context: .
+      dockerfile: ApartmentBooking.Api/Dockerfile
+    depends_on:
+        - apartmentbooking-db
+
+  apartmentbooking-db:
+    image: mcr.microsoft.com/mssql/server:latest
+    container_name: ApartmentBooking.Db
+    environment:
+        - ACCEPT_EULA=true
+        - MSSQL_SA_PASSWORD=password
+        - MSSQL_PID=Express 
+    volumes:
+        - ./.containers/database:/var/opt/mssql/data
+    ports:
+        - 1433:1433

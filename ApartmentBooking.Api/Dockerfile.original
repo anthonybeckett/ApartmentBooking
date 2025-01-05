@@ -13,9 +13,6 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["ApartmentBooking.Api/ApartmentBooking.Api.csproj", "ApartmentBooking.Api/"]
-COPY ["ApartmentBooking.Application/ApartmentBooking.Application.csproj", "ApartmentBooking.Application/"]
-COPY ["ApartmentBooking.Domain/ApartmentBooking.Domain.csproj", "ApartmentBooking.Domain/"]
-COPY ["ApartmentBooking.Infrastructure/ApartmentBooking.Infrastructure.csproj", "ApartmentBooking.Infrastructure/"]
 RUN dotnet restore "./ApartmentBooking.Api/ApartmentBooking.Api.csproj"
 COPY . .
 WORKDIR "/src/ApartmentBooking.Api"
