@@ -1,3 +1,4 @@
+using ApartmentBooking.Api.Extensions;
 using ApartmentBooking.Application;
 using ApartmentBooking.Infrastructure;
 
@@ -18,6 +19,8 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+
+    app.ApplyMigrations();
 }
 
 app.UseHttpsRedirection();
