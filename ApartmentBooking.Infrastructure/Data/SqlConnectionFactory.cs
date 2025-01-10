@@ -4,21 +4,15 @@ using System.Data;
 
 namespace ApartmentBooking.Infrastructure.Data;
 
-internal sealed class SqlConnectionFactory : ISqlConnectionFactory
+internal sealed class SqlConnectionFactory(string connectionString) : ISqlConnectionFactory
 {
-    private readonly string _connectionString;
-
-    public SqlConnectionFactory()
+    public SqlConnectionFactory() : this("")
     {
     }
 
-    public SqlConnectionFactory(string connectionString)
-    {
-        _connectionString = connectionString;
-    }
     public IDbConnection CreateConnection()
     {
-        var connection = new SqlConnection(_connectionString);
+        var connection = new SqlConnection(connectionString);
 
         connection.Open();
 

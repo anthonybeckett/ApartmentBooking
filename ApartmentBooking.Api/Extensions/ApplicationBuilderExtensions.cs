@@ -1,4 +1,5 @@
 using System;
+using ApartmentBooking.Api.Middleware;
 using ApartmentBooking.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,5 +14,10 @@ public static class ApplicationBuilderExtensions
         using var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
         dbContext.Database.Migrate();
+    }
+
+    public static void UseCustomExceptionHandler(this IApplicationBuilder app)
+    {
+        app.UseMiddleware<ExceptionHandlingMiddleware>();
     }
 }

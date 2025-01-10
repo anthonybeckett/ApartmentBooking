@@ -21,11 +21,16 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 
     app.ApplyMigrations();
+
+    //Only run this when we need some sample data
+    // app.SeedData();
 }
 
 app.UseHttpsRedirection();
 
 //app.UseAuthorization();
+
+app.UseCustomExceptionHandler();
 
 app.MapControllers();
 
